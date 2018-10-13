@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1539287615 source:c:\users\chide\downloads\codeblocks\payrollsystem\main.cpp
+	<iostream>
+	<iomanip>
+	<vector>
+	"Employee.h"
+	"FixedSalaryEmployee.h"
+	"CommissionEmployee.h"
+	"BaseAndCommissionEmployee.h"
+
+1539330262 c:\users\chide\downloads\codeblocks\payrollsystem\employee.h
+	<string>
+
+1539330294 c:\users\chide\downloads\codeblocks\payrollsystem\fixedsalaryemployee.h
+	<string>
+	"Employee.h"
+
+1539330667 c:\users\chide\downloads\codeblocks\payrollsystem\commissionemployee.h
+	<string>
+	"Employee.h"
+
+1539330514 c:\users\chide\downloads\codeblocks\payrollsystem\baseandcommissionemployee.h
+	<string>
+	"CommissionEmployee.h"
+
