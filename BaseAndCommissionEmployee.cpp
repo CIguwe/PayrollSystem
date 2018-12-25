@@ -1,15 +1,16 @@
 #include <iostream>
 #include <stdexcept>
 #include "BaseAndCommissionEmployee.h"
+#include "CommissionEmployee.h"
 using namespace std;
 
     // constructor
-    BasePlusCommissionEmployee::BasePlusCommissionEmployee( const string &first, const string &last, const string &ssn, double sales, double rate, double salary )
+    BaseAndCommissionEmployee::BaseAndCommissionEmployee( const string &first, const string &last, const string &ssn, double sales, double rate, double salary )
                                         : CommissionEmployee( first, last, ssn, sales, rate )
 {
         setBaseSalary( salary ); // validate and store the base salary
 }
-    BasePlusCommissionEmployee::setBaseSalary(salary)
+    BaseAndCommissionEmployee::setBaseSalary(salary)
 {
        if (salary >= 0.0)
             baseSalary = salary;
@@ -17,17 +18,17 @@ using namespace std;
             throw invalid_argument("Salary must be equal to or greater than 0.0");
 }
 
-    double BasePlusCommissionEmployee::getBaseSalary() const
+    double BaseAndCommissionEmployee::getBaseSalary() const
 {
       return baseSalary;
 }
     // calculate earnings and override pure virtual function earnings in Employee class
-    double BasePlusCommissionEmployee::earnings() const
+    double BaseAndCommissionEmployee::earnings() const
 {
-        return getBaseSalary + CommissionEmployee::earnings();
+        return getBaseSalary() + CommissionEmployee::earnings();
 }
 
-    void BasePlusCommissionEmployee::print() const
+    void BaseAndCommissionEmployee::print() const
 {
         cout << "Base & Commission Employee: ";
         Employee::print(); // code reuse

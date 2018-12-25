@@ -20,7 +20,7 @@ using namespace std;
     CommissionEmployee commissionEmployee(
     "James", "Potter", "777-77-7777", 15000, .06 );
     BaseAndCommissionEmployee baseAndCommissionEmployee(
-    "Deran", "Eben", "999-99-9999", 12000, .04, 500 );
+    "Dera", "Eben", "999-99-9999", 12000, .04, 500 );
 
     // create vector of three base-class pointers
     vector< Employee * > employees( 3 );

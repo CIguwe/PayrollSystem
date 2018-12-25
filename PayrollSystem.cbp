@@ -32,7 +32,21 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename=".gitattributes" />
+		<Unit filename="BaseAndCommissionEmployee.cpp" />
+		<Unit filename="BaseAndCommissionEmployee.h" />
+		<Unit filename="CommissionEmployee.cpp" />
+		<Unit filename="CommissionEmployee.h" />
+		<Unit filename="CppProperties.json" />
+		<Unit filename="Employee.cpp" />
+		<Unit filename="Employee.h" />
+		<Unit filename="FixedSalaryEmployee.cpp" />
+		<Unit filename="FixedSalaryEmployee.h" />
+		<Unit filename="PayrollSystem.cbp" />
+		<Unit filename="PayrollSystem.depend" />
+		<Unit filename="PayrollSystem.layout" />
 		<Unit filename="main.cpp" />
+		<Unit filename="main.o" />
 		<Extensions>
 			<code_completion />
 			<envvars />

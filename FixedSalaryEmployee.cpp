@@ -10,10 +10,11 @@ using namespace std;
     setMonthlySalary( salary );
 }
     // set salary
-    void SalariedEmployee::setMonthlySalary( double salary )
+    void FixedSalaryEmployee::setMonthlySalary( double salary )
 {
-    if( salary >= 0.0 )
-    monthlySalary = salary;
+    if( salary >= 0.0 ){
+        monthlySalary = salary;
+    }
     else
         throw invalid_argument( "Monthly salary must be >= 0.0" );
 }
